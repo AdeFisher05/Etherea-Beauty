@@ -1,0 +1,63 @@
+:root {
+  --soft-pink: #fadadd;
+  --pale-pink: #f8e8e8;
+  --cream: #fff8f0;
+  --gold: #b08d57;
+  --bright-gold: #c4a661;
+  --dark-grey: #4a4a4a;
+  --white: #ffffff;
+  --heading-font: "Playfair Display", serif;
+  --body-font: "Montserrat", sans-serif;
+  --fa-style-family-classic: "Font Awesome 6 Free";
+  --fa-font-solid: normal 900 1em / 1 "Font Awesome 6 Free";
+}
+
+body, ul, nav > h1{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a, button{
+    cursor: pointer;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+nav{
+    padding: 20px 15%;
+    background-color: var(--cream);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    gap: 30px;
+}
+
+nav > h1{
+    color: var(--gold);
+}
+
+ul{
+    
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+nav > button{
+    background-color: var(--gold);
+    color: var(--white);
+    width: 50%;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    justify-self: end;
+}
