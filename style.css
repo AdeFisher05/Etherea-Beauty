@@ -10,20 +10,33 @@
   --body-font: "Montserrat", sans-serif;
   --fa-style-family-classic: "Font Awesome 6 Free";
   --fa-font-solid: normal 900 1em / 1 "Font Awesome 6 Free";
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
 }
 
-body, ul, nav > h1{
-    padding: 0;
-    margin: 0;
+body,
+ul {
+  padding: 0;
+  margin: 0;
+  font-family: var(--body-font);
+  letter-spacing: 0.05em;
 }
 
-a{
-    text-decoration: none;
-    color: inherit;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-a, button{
-    cursor: pointer;
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a,
+button {
+  cursor: pointer;
 }
 
 header {
@@ -32,32 +45,84 @@ header {
   top: 0;
 }
 
-nav{
-    padding: 20px 15%;
-    background-color: var(--cream);
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    align-items: center;
-    gap: 30px;
+nav {
+  padding: var(--space-md) 15%;
+  gap: var(--space-lg);
+  background-color: var(--cream);
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  font-weight: 700;
+  color: var(--dark-grey);
+  font-size: 0.9rem;
 }
 
-nav > h1{
-    color: var(--gold);
+.nav-title {
+  color: var(--gold);
+  font-family: var(--heading-font);
+  margin: 0;
 }
 
-ul{
-    
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
 }
 
-nav > button{
-    background-color: var(--gold);
-    color: var(--white);
-    width: 50%;
-    border: none;
-    border-radius: 20px;
-    padding: 10px;
-    justify-self: end;
+.btn-primary {
+  background-color: var(--gold);
+  color: var(--white);
+  border: none;
+  border-radius: 20px;
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+
+nav > button {
+  width: 50%;
+  padding: 10px;
+  justify-self: end;
+}
+
+.hero {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./images/hero-background.jpg);
+  background-size: cover;
+  height: 110lvh;
+  margin-top: -20lvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+}
+
+.hero div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25lvh;
+}
+
+.hero h1 {
+  font-family: var(--heading-font);
+  font-size: 3.5rem;
+  margin-bottom: 30px;
+}
+
+.hero button {
+  padding: 15px 40px;
+  font-size: 1rem;
+  border-radius: 30px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  font-weight: 100;
+  font-family: var(--fa-font-solid);
+  width: 60%;
+  text-align: center;
+  margin: 0 0 30px;
 }
