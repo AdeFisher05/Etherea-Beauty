@@ -22,3 +22,14 @@ navLinks.forEach((link) => {
     link.classList.remove("active");
   });
 });
+
+const cards = document.querySelectorAll(".card");
+cards.forEach((card) => {
+    card.style.transition = "transform 0.2s ease";
+    card.addEventListener("mouseover", () => {
+        card.style.transform = "translateY(-3px)";
+    });
+    card.addEventListener("mouseout", () => {
+        card.style.transform = "translateY(3px)";
+    });
+});

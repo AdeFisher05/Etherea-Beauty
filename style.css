@@ -150,3 +150,50 @@ nav > button {
   text-align: center;
   margin: 0 0 30px;
 }
+
+.about {
+  background-color: var(--cream);
+  padding: 6lvh 30lvh;
+}
+
+.main-title {
+  text-align: center;
+  color: var(--gold);
+  font-family: var(--heading-font);
+  font-size: 2.4rem;
+}
+
+.about p,
+.card p {
+  line-height: 1.5;
+  color: var(--dark-grey);
+}
+
+.services {
+  background-color: var(--pale-pink);
+  padding: 6lvh 30lvh;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  position: relative;
+  background-color: var(--white);
+  text-align: center;
+  border-radius: 10px;
+  z-index: 2;
+  padding: 30px 15px;
+}
+
+.card-title {
+  color: var(--gold);
+  font-family: var(--heading-font);
+  font-size: 1.4rem;
+}
+
+.card p{
+  font-size: 0.9rem;
+}
